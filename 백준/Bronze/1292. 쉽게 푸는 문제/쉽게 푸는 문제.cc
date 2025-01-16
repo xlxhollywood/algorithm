@@ -14,7 +14,6 @@ int main() {
             a[cnt++] = i; // 배열에 i 값 할당 후 cnt 증가
             if (cnt == 1001) break; // cnt가 a[A] <= a[B] <= a[1000] 이므로 1000에서 정지 
         }
-        if (cnt == 1001) break;
     }
 
   
