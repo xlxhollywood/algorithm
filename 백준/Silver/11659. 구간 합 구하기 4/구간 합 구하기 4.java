@@ -20,6 +20,7 @@ class Main {
       pSum[i] = pSum[i-1] + numbers[i];
       }
 
+      // i,j 입력 받은 후 입력 받은 구간 합 구하기
       for (int k = 0; k < m; k++){
       int i = sc.nextInt();
       int j = sc.nextInt();
