@@ -38,11 +38,6 @@ class Main {
       int sum = pSum[j] - pSum[i-1];
       System.out.println(sum);
       }
-
-  
-
-      
-      
       
   }
   
