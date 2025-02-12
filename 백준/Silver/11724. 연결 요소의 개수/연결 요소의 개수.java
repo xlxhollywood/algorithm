@@ -1,7 +1,7 @@
 import java.util.*;
 
 class Main {
-    static ArrayList<ArrayList<Integer>> adj;
+    static ArrayList<ArrayList<Integer>> adj = new ArrayList<>();
     static boolean[] visited; // 방문 여부 체크 배열
 
     static void dfs(int idx) {
@@ -16,15 +16,14 @@ class Main {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt(); // 정점 개수
-        int m = sc.nextInt(); // 간선 개수
+        int n = sc.nextInt(); // 정점 개수 1 ~ N
+        int m = sc.nextInt(); // 간선 개수 1 ~ M
         int cnt = 0; // 연결 요소 개수
 
-        // 인접 리스트 초기화
-        adj = new ArrayList<>();
-        for (int i = 0; i <= n; i++) {
+        
+        for (int i = 0; i <= n; i++) {  // 1부터 시작하므로 방문 배열 하나 더만듬
             adj.add(new ArrayList<>());
-        }
+        }  
 
         visited = new boolean[n + 1]; // 방문 배열 초기화
 
